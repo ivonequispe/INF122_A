@@ -29,17 +29,18 @@
 
 .contenedor .secction{
     background-color: rgb(255, 0, 212);
-    grid-column: secction;
-}
+    grid-column: section;}
 
-.secction{
-  
-    display: flex;
-    flex-direction: row;  
-}
+  /* ayque revisar este .seccion*/
+    .secction{
+
+        display: grid;
+    grid-template-rows: 1fr;
+    }
 .contenido{
     background-color: brown;
     margin: 10px;
+    
 }
 
 .contenedor .ads{
