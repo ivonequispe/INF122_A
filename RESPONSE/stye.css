@@ -1,0 +1,91 @@
+.padre{
+    background-color: khaki;
+    padding: 20px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr auto auto;
+   grid-template-areas:  "header header header header"
+                          "nav nav nav nav"
+                        "cont1 cont2 cont3 ads1"
+                          "cont1 cont2 cont3 ads2"
+                          "foot foot foot foot";
+    
+
+}
+
+.padre .header{
+    background-color: aqua;
+    grid-area: header;
+
+}
+.padre .nav{
+    background-color: rgb(153, 192, 192);
+    grid-area: nav;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.padre .nav .boton{
+    background-color: yellow;
+    margin: 5px;
+
+}
+
+
+.padre .cont1{
+    
+    background-color: rgb(220, 226, 224);
+    
+    grid-area: cont1;
+
+}
+
+.padre .cont2{
+    background-color: rgb(220, 226, 224);
+    grid-area: cont2;
+
+}
+
+
+.padre .cont3{
+    background-color: rgb(220, 226, 224);
+    grid-area: cont3;
+
+}
+
+
+.padre .ads1{
+    background-color: rgb(93, 199, 89);
+    grid-area: ads1;
+
+}
+.padre .ads2{
+    background-color: rgb(178, 245, 176);
+    grid-area: ads2;
+
+}
+.padre .foot{
+    background-color: aqua;
+    grid-area: foot;
+
+}
+@media screen and (max-width: 760px) {
+    .padre{
+    background-color: red;
+    font-family: 'Courier New', Courier, monospace;
+   grid-template-areas:  "header header header header"
+                          "nav nav nav nav"
+                        "cont1 cont1 cont1 cont1"
+                          "cont2 cont2 cont3 cont3"
+                          "ads1 ads2 ads2 ads2"
+                          "foot foot foot foot";
+    
+
+    }
+
+}
