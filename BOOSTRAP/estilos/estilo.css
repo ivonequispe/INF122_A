@@ -9,7 +9,15 @@
                           "foot foot foot";
     grid-gap: 10px;
 }
+.catalogo{
 
+    background-color: rgb(216, 255, 242);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: centers;
+}
 
 .padre .header{
     grid-area:header;
